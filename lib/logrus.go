@@ -28,7 +28,7 @@ func NewLog(file string) (log *logrus.Logger) {
 		Compress: true,
 	})
 	//log.SetReportCaller(true)
-	tg := &TgNotify{token: "5007642930:AAEcmks_aoCudACQWM5H0I_i9pRhm3BsOms", chatId: "-509509547"}
+	tg := &TgNotify{token: "", chatId: ""}
 	log.AddHook(tg)
 	return
 }

@@ -32,13 +32,13 @@ func GetConsulConf() ConsulConf {
 	env := GetEnv()
 	if env == "test" {
 		return ConsulConf{
-			Addr:  "47.100.85.33:8500",
-			Token: "4d85aeb4-a4e2-f584-dc16-a33d4151bdc8",
+			Addr:  "",
+			Token: "",
 		}
 	} else if env == "prod" {
 		return ConsulConf{
-			Addr:  "internal-consul-elb-466801138.ap-northeast-1.elb.amazonaws.com:8500",
-			Token: "bd792f9f-20d9-cea8-a5c7-f1dad30d9f33",
+			Addr:  "",
+			Token: "",
 		}
 	} else {
 		return ConsulConf{
